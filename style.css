@@ -1,0 +1,508 @@
+/* =========================================
+   CRISTO COBOS — PORTFOLIO
+   SCIENTIFIC CYBERPUNK / SOLARPUNK
+   ========================================= */
+
+
+/* ---------- RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ---------- COLOR SYSTEM ---------- */
+
+:root {
+
+    /* Backgrounds */
+
+    --bg-primary: #0B0F14;
+    --bg-secondary: #121A24;
+    --bg-card: #161F2B;
+
+
+    /* Text */
+
+    --text-primary: #E6EDF3;
+    --text-secondary: #8B949E;
+
+
+    /* Cyberpunk accents */
+
+    --neon-blue: #00B8FF;
+    --neon-cyan: #00F0FF;
+
+
+    /* Solarpunk accent */
+
+    --solar-green: #7CFF6B;
+
+
+    /* Other */
+
+    --border-color: rgba(255, 255, 255, 0.08);
+
+}
+
+
+/* ---------- BASE ---------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family:
+        Inter,
+        Arial,
+        sans-serif;
+
+    background-color: var(--bg-primary);
+
+    color: var(--text-primary);
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+
+.navbar {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 24px 8%;
+
+    border-bottom:
+        1px solid var(--border-color);
+
+}
+
+
+/* Logo */
+
+.logo {
+
+    font-size: 1.4rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+}
+
+
+.logo span {
+
+    color: var(--neon-blue);
+
+}
+
+
+/* Navigation links */
+
+.nav-links {
+
+    display: flex;
+
+    gap: 32px;
+
+}
+
+
+.nav-links a {
+
+    color: var(--text-secondary);
+
+    text-decoration: none;
+
+    font-size: 0.9rem;
+
+    transition: 0.3s;
+
+}
+
+
+.nav-links a:hover {
+
+    color: var(--neon-blue);
+
+}
+
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+
+
+.hero {
+
+    min-height: 90vh;
+
+    display: grid;
+
+    grid-template-columns:
+        1.2fr 0.8fr;
+
+    align-items: center;
+
+    gap: 40px;
+
+    padding:
+
+        80px 8% 100px;
+
+}
+
+
+/* ---------- HERO CONTENT ---------- */
+
+
+.hero-tag {
+
+    color: var(--neon-cyan);
+
+    font-size: 0.75rem;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 24px;
+
+}
+
+
+.hero h1 {
+
+    font-size: clamp(3rem,
+            6vw,
+            5.5rem);
+
+    line-height: 1.05;
+
+    max-width: 850px;
+
+}
+
+
+.hero h1 span {
+
+    color: var(--neon-blue);
+
+}
+
+
+/* Description */
+
+.hero-description {
+
+    color: var(--text-secondary);
+
+    font-size: 1.1rem;
+
+    max-width: 620px;
+
+    margin-top: 28px;
+
+}
+
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 16px;
+
+    margin-top: 36px;
+
+}
+
+
+.btn-primary,
+.btn-secondary {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 14px 24px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+
+}
+
+
+/* Primary */
+
+.btn-primary {
+
+    background:
+        var(--neon-blue);
+
+    color:
+        var(--bg-primary);
+
+}
+
+
+.btn-primary:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 0 20px rgba(0, 184, 255, 0.45);
+
+}
+
+
+/* Secondary */
+
+.btn-secondary {
+
+    color:
+        var(--text-primary);
+
+    border:
+        1px solid var(--border-color);
+
+}
+
+
+.btn-secondary:hover {
+
+    border-color:
+        var(--neon-cyan);
+
+    color:
+        var(--neon-cyan);
+
+}
+
+
+/* =========================================
+   HERO VISUAL
+   ========================================= */
+
+
+.hero-visual {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+/* Main circle */
+
+.data-orb {
+
+    width: 280px;
+
+    height: 280px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    position: relative;
+
+    border:
+
+        1px solid rgba(0, 240, 255, 0.4);
+
+    box-shadow:
+
+        0 0 40px rgba(0, 184, 255, 0.15),
+
+        inset 0 0 40px rgba(0, 240, 255, 0.08);
+
+}
+
+
+/* Orb center */
+
+.orb-core {
+
+    width: 120px;
+
+    height: 120px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background:
+
+        var(--bg-secondary);
+
+    border:
+
+        1px solid var(--neon-blue);
+
+    color:
+
+        var(--neon-cyan);
+
+    font-size: 1.2rem;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    box-shadow:
+
+        0 0 25px rgba(0, 184, 255, 0.35);
+
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+
+@media (max-width: 900px) {
+
+    .hero {
+
+        grid-template-columns:
+            1fr;
+
+        text-align:
+            center;
+
+    }
+
+
+    .hero-description {
+
+        margin-left:
+            auto;
+
+        margin-right:
+            auto;
+
+    }
+
+
+    .hero-buttons {
+
+        justify-content:
+            center;
+
+    }
+
+
+    .hero-visual {
+
+        margin-top:
+            30px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+
+        padding:
+            20px 6%;
+
+    }
+
+
+    .nav-links {
+
+        gap:
+            16px;
+
+    }
+
+
+    .nav-links a {
+
+        font-size:
+            0.8rem;
+
+    }
+
+
+    .hero {
+
+        padding:
+
+            70px 6% 80px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size:
+            3rem;
+
+    }
+
+
+    .hero-buttons {
+
+        flex-direction:
+            column;
+
+    }
+
+
+    .data-orb {
+
+        width:
+            220px;
+
+        height:
+            220px;
+
+    }
+
+}
