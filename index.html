@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -22,20 +22,59 @@
     <nav class="navbar">
 
         <div class="logo">
-            CC<span>.</span>
+            CRISTO<span>.COBOS</span>
         </div>
 
-        <div class="nav-links">
+        <div class="nav-controls">
 
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <!-- Navigation -->
+            <div class="nav-links">
+
+                <a href="#about" data-es="Sobre mí" data-en="About">
+                    Sobre mí
+                </a>
+
+                <a href="#projects" data-es="Proyectos" data-en="Projects">
+                    Proyectos
+                </a>
+
+                <a href="#skills" data-es="Habilidades" data-en="Skills">
+                    Habilidades
+                </a>
+
+                <a href="#contact" data-es="Contacto" data-en="Contact">
+                    Contacto
+                </a>
+
+            </div>
+
+
+            <!-- Controls -->
+
+            <div class="nav-actions">
+
+                <!-- Dark / Light mode -->
+
+                <button id="theme-toggle" class="nav-button" aria-label="Cambiar tema">
+
+                    ☀
+
+                </button>
+
+
+                <!-- Language -->
+
+                <button id="language-toggle" class="nav-button language-button">
+
+                    EN
+
+                </button>
+
+            </div>
 
         </div>
 
     </nav>
-
 
     <!-- Hero Section -->
 
@@ -45,32 +84,56 @@
 
             <div class="hero-content">
 
-                <p class="hero-tag">
-                    APPLIED MATHEMATICS · DATA SCIENCE · COMPUTATIONAL RESEARCH
+                <p class="hero-tag" data-es="MATEMÁTICAS APLICADAS · CIENCIA DE DATOS · INVESTIGACIÓN COMPUTACIONAL"
+                    data-en="APPLIED MATHEMATICS · DATA SCIENCE · COMPUTATIONAL RESEARCH">
+
+                    MATEMÁTICAS APLICADAS · CIENCIA DE DATOS · INVESTIGACIÓN COMPUTACIONAL
+
                 </p>
 
+
                 <h1>
-                    Turning mathematics and data
-                    into <span>meaningful solutions.</span>
+
+                    <span class="title-normal" data-es="Transformando matemáticas y datos en "
+                        data-en="Turning mathematics and data into ">
+
+                        Transformando matemáticas y datos en
+
+                    </span>
+
+                    <span class="title-highlight" data-es="soluciones significativas." data-en="meaningful solutions.">
+
+                        soluciones significativas.
+
+                    </span>
+
                 </h1>
 
-                <p class="hero-description">
 
-                    Applied Mathematics graduate and aspiring Data Scientist
-                    passionate about machine learning, statistical analysis,
-                    computational research and solving complex problems.
+                <p class="hero-description"
+                    data-es="Egresado de Matemáticas Aplicadas y Científico de Datos en formación, apasionado por el aprendizaje automático, el análisis estadístico, la investigación computacional y la resolución de problemas complejos."
+                    data-en="Applied Mathematics graduate and aspiring Data Scientist passionate about machine learning, statistical analysis, computational research and solving complex problems.">
+
+                    Egresado de Matemáticas Aplicadas y Científico de Datos en formación, apasionado por el aprendizaje
+                    automático, el análisis estadístico, la investigación computacional y la resolución de problemas
+                    complejos.
 
                 </p>
 
 
                 <div class="hero-buttons">
 
-                    <a href="#projects" class="btn-primary">
-                        View Projects
+                    <a href="#projects" class="btn-primary" data-es="Ver proyectos" data-en="View Projects">
+
+                        Ver proyectos
+
                     </a>
 
-                    <a href="#contact" class="btn-secondary">
-                        Contact Me
+
+                    <a href="#contact" class="btn-secondary" data-es="Contáctame" data-en="Contact Me">
+
+                        Contáctame
+
                     </a>
 
                 </div>
@@ -82,6 +145,30 @@
 
                 <div class="data-orb">
 
+                    <!-- Mathematical network -->
+
+                    <div class="network-lines">
+
+                        <span class="line line-1"></span>
+                        <span class="line line-2"></span>
+                        <span class="line line-3"></span>
+                        <span class="line line-4"></span>
+
+                    </div>
+
+
+                    <!-- Network nodes -->
+
+                    <span class="node node-1"></span>
+                    <span class="node node-2"></span>
+                    <span class="node node-3"></span>
+                    <span class="node node-4"></span>
+                    <span class="node node-5"></span>
+                    <span class="node node-6"></span>
+
+
+                    <!-- Central core -->
+
                     <div class="orb-core">
                         DATA
                     </div>
@@ -91,6 +178,301 @@
             </div>
 
         </section>
+        <!-- ABOUT SECTION -->
+
+        <section id="about" class="about">
+
+            <div class="section-header">
+
+                <p class="section-tag" data-es="SOBRE MÍ" data-en="ABOUT ME">
+
+                    SOBRE MÍ
+
+                </p>
+
+
+                <h2>
+
+                    <span data-es="Matemáticas, datos y" data-en="Mathematics, data and">
+
+                        Matemáticas, datos y
+
+                    </span>
+
+                    <span class="title-highlight" data-es="resolución de problemas." data-en="problem solving.">
+
+                        resolución de problemas.
+
+                    </span>
+
+                </h2>
+
+            </div>
+
+
+            <div class="about-grid">
+
+
+                <!-- Main description -->
+
+                <div class="about-text">
+
+
+                    <p data-es="Soy egresado de Matemáticas Aplicadas con interés en Ciencia de Datos, Machine Learning e investigación computacional."
+                        data-en="I am an Applied Mathematics graduate interested in Data Science, Machine Learning and computational research.">
+
+                        Soy egresado de Matemáticas Aplicadas con interés en
+                        Ciencia de Datos, Machine Learning e investigación
+                        computacional.
+
+                    </p>
+
+
+                    <p data-es="Mi formación matemática me ha permitido desarrollar una forma estructurada de abordar problemas complejos, combinando modelación, estadística, programación y análisis de datos."
+                        data-en="My mathematical background has allowed me to develop a structured approach to complex problems, combining mathematical modeling, statistics, programming and data analysis.">
+
+                        Mi formación matemática me ha permitido desarrollar una
+                        forma estructurada de abordar problemas complejos,
+                        combinando modelación, estadística, programación y
+                        análisis de datos.
+
+                    </p>
+
+
+                    <p data-es="Me interesa transformar información compleja en conocimiento útil y desarrollar soluciones que combinen fundamentos matemáticos con herramientas computacionales."
+                        data-en="I am interested in transforming complex information into useful knowledge and developing solutions that combine mathematical foundations with computational tools.">
+
+                        Me interesa transformar información compleja en
+                        conocimiento útil y desarrollar soluciones que combinen
+                        fundamentos matemáticos con herramientas
+                        computacionales.
+
+                    </p>
+
+
+                </div>
+
+
+                <!-- Information cards -->
+
+                <div class="about-cards">
+
+
+                    <div class="about-card">
+
+                        <span class="card-label">
+                            FORMACIÓN
+                        </span>
+
+                        <h3>
+                            Matemáticas Aplicadas
+                        </h3>
+
+                        <p>
+                            Modelación matemática, estadística, optimización
+                            y ciencias computacionales.
+                        </p>
+
+                    </div>
+
+
+                    <div class="about-card">
+
+                        <span class="card-label">
+                            ENFOQUE
+                        </span>
+
+                        <h3>
+                            Ciencia de Datos
+                        </h3>
+
+                        <p>
+                            Análisis de datos, Machine Learning,
+                            programación y resolución de problemas.
+                        </p>
+
+                    </div>
+
+
+                    <div class="about-card">
+
+                        <span class="card-label">
+                            INTERÉS
+                        </span>
+
+                        <h3>
+                            Investigación Computacional
+                        </h3>
+
+                        <p>
+                            Algoritmos, teoría de grafos y exploración
+                            computacional de problemas matemáticos.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- PROJECTS SECTION -->
+
+        <section id="projects" class="projects">
+
+            <div class="section-header">
+
+                <p class="section-tag">
+                    PROYECTOS
+                </p>
+
+                <h2>
+                    Construyendo soluciones con
+                    <span>datos y computación.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <!-- PROJECT 1 -->
+
+                <article class="project-card">
+
+                    <div class="project-top">
+
+                        <span class="project-number">
+                            01
+                        </span>
+
+                        <span class="project-type">
+                            DATA AUTOMATION
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        Generador de Reportes Estadísticos
+                    </h3>
+
+
+                    <p class="project-description">
+
+                        Herramienta desarrollada para automatizar la generación
+                        de reportes estadísticos institucionales a partir de
+                        bases de datos.
+
+                    </p>
+
+
+                    <p class="project-description">
+
+                        El proyecto integra procesos de limpieza y transformación
+                        de datos, generación de tablas y visualizaciones e
+                        integración automática de resultados en documentos
+                        reproducibles.
+
+                    </p>
+
+
+                    <div class="project-tech">
+
+                        <span>R</span>
+
+                        <span>dplyr</span>
+
+                        <span>ggplot2</span>
+
+                        <span>Sweave</span>
+
+                        <span>LaTeX</span>
+
+                    </div>
+
+
+                    <a href="https://github.com/CristoCobos/Generador-de-Reportes" target="_blank" class="project-link">
+
+                        Ver en GitHub →
+
+                    </a>
+
+                </article>
+
+
+                <!-- PROJECT 2 -->
+
+                <article class="project-card">
+
+                    <div class="project-top">
+
+                        <span class="project-number">
+                            02
+                        </span>
+
+                        <span class="project-type">
+                            DATA ANALYSIS
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        Statistical Data Exploration
+                    </h3>
+
+
+                    <p class="project-description">
+
+                        Colección de proyectos de análisis exploratorio de datos
+                        desarrollados durante mi formación en Ciencia de Datos.
+
+                    </p>
+
+
+                    <p class="project-description">
+
+                        Implementé procesos de importación, limpieza, exploración
+                        y análisis de diferentes conjuntos de datos para
+                        identificar patrones y preparar información para análisis
+                        estadísticos y modelos de Machine Learning.
+
+                    </p>
+
+
+                    <div class="project-tech">
+
+                        <span>Python</span>
+
+                        <span>pandas</span>
+
+                        <span>NumPy</span>
+
+                        <span>SciPy</span>
+
+                        <span>Matplotlib</span>
+
+                    </div>
+
+
+                    <a href="https://github.com/CristoCobos/Statistical-Data-Exploration" target="_blank"
+                        class="project-link">
+
+                        Ver en GitHub →
+
+                    </a>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
 
     </main>
 
